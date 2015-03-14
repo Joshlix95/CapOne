@@ -1,6 +1,7 @@
-###### Challenge on MindSumo about the #Oscar2015 -- Capital One
+###### Challenge on MindSumo about the `#Oscars2015` -- Capital One
 ###### Programming language: Python
 ###### Author: Josuel Musambaghani
+###### Email: <joshlixmus@gmail.com>
 
 ## Analyzing data from The Oscars 2015 
 
@@ -22,7 +23,7 @@ The goal of this part is to assemble all important modules (from outside the cod
 
 This part deals with the 'Popularity rank.' I mainly used the 'Tweets' column, accessed by using the previous function `ColCall(col)`; in this specific case, `col=2`.
 
-Next, I created another function called 'FindAppearance(Film)' that loops over the whole column of Tweets by counting the number of each film founded. Here, I had to particularly loop some strings like: 'ic' (standing for picture), 'irdman' (standing for Birdman), 'gnorance', 'ertue' (both standing for the other name of the film Birdman 'The unexpected vertue of ignorance'). This approach made the looping more accurate by avoiding some mismatch between the best picture nominations' statistics and other nominations (because there were films with more than eight diverse nominations).
+Next, I created another function called `FindAppearance(Film)` that loops over the whole column of Tweets by counting the number of each film founded. Here, I had to particularly loop some strings like: 'ic' (standing for picture), 'irdman' (standing for Birdman), 'gnorance', 'ertue' (both standing for the other name of the film Birdman 'The unexpected vertue of ignorance'). This approach made the looping more accurate by avoiding some mismatch between the best picture nominations' statistics and other nominations (because there were films with more than eight diverse nominations).
 
 ###### Note
 
@@ -41,7 +42,7 @@ Three main procedures were used in this part:
 
 #### Part 4: Challenge 3 -- Location [States that tweeted the most]
 
-Here, I used a dictionary (called 'states') that stores all the US States and their abbreviations as keys. Every key stores in its list possible strings that can be written in a tweet (post) that refers to a specific state; for example, for the state of California, we have the key 'CA' and the list ['California', 'cali', 'CA']. The dictionary 'states' was then used in a for loop to count how many times the name of a state was mentioned in a tweet. The looping here is done in the column of 'Users location' (see data oscars_tweets.csv), turned to a list by using the initial function `ColCall(col)`. 
+Here, I used a dictionary (called 'states') that stores all the US States and their abbreviations as keys. Every key stores in its list possible strings that can be written in a tweet (post) that refers to a specific state; for example, for the state of California, we have the key 'CA' and the list `['California', 'cali', 'CA']`. The dictionary 'states' was then used in a for loop to count how many times the name of a state was mentioned in a tweet. The looping here is done in the column of 'Users location' (see data oscars_tweets.csv), turned to a list by using the initial function `ColCall(col)`. 
 
 #### Test - Efficiency
 
