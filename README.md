@@ -1,5 +1,6 @@
 # CapOne
 Challenge on MindSumo about #Oscar2015
+Programming language: Python
 # Author: Josuel Musambaghani
 
 *** Challenge Context ***
@@ -10,28 +11,26 @@ In the Capital One challenge contest, three main concerns were carefully treated
 2) Winner Announcement Prediction: Hour and minute when the winner (Birdman) was mentioned on Twitter most frequently
 3) Location: A list of which states were the most active in tweeting about #Oscars2015 (rank ordered from most active to least)
 
-I solved the challenge using the python file that can be found in this repository.
+I solved the challenge using the python file; the repository of the code-challenge is named JosuelM_CapOne.py
 
-The project has mainly four main parts:
+I structured the project in four main parts as follow:
 
 *** Part 1: Preamble ***
 
-The goal of this part is to assemble all important modules (from outside the code) that can be helpful when solving the three challenges. The library CSV was imported to facilitate manipulations of the file od data given in the CSV format.
-
-In addition, I created a function called 'ColCall(col)'; this function will help to get data from any entire column of the file (oscars_tweets.csv) under the form (datatype) of a list.
+The goal of this part is to assemble all important modules (from outside the code) that can be helpful when solving the three challenges. For instance, the library CSV was imported to facilitate manipulations of data given in the CSV format. In addition, I created a function called 'ColCall(col)'; this function will help to get data from any entire column of the file (oscars_tweets.csv) under the form (datatype) of a list. As it can be seen throughout my whole code, this definition is referenced regularly to read data from the Excel file.
 
 *** Part 2: Challenge 1 -- Popularity rank ***
 
-This part deals with the 'Popularity rank.' I mainly used the 'Tweets' column, accessed by using the previous function 'ColCall(col)' where col=2.
+This part deals with the 'Popularity rank.' I mainly used the 'Tweets' column, accessed by using the previous function 'ColCall(col)'; in this specific case, col=2.
 
-Furthermore, I created another function called 'FindAppearance(Film)' that loops over the whole column of Tweets by counting the number of each film founded. Here, I had to particularly loop some strings like: 'ic' (standing for picture), 'irdman' (standing for Birdman), 'gnorance', 'ertue' (both standing for the other name of the film Birdman 'The unexpected vertue of ignorance'). This approach made the looping more accurate by avoiding some mismatch between the best picture nominations' statistics and other nominations (because there were films such as 'Selma' with diverse nominations, other than best picture nomination).
+Next, I created another function called 'FindAppearance(Film)' that loops over the whole column of Tweets by counting the number of each film founded. Here, I had to particularly loop some strings like: 'ic' (standing for picture), 'irdman' (standing for Birdman), 'gnorance', 'ertue' (both standing for the other name of the film Birdman 'The unexpected vertue of ignorance'). This approach made the looping more accurate by avoiding some mismatch between the best picture nominations' statistics and other nominations (because there were films with more than eight diverse nominations).
 
 *** Note ***
-It is so important to note that the eight films nominated for the best picture were also nominated for other awards. This means when selecting data from tweets about 'Birdman' for example, it is wise to make sure that there are specifics that can help to only deal with information for the best pictures, and not for other eight nominations received by 'Birdman'. Accordingly, I included in my searching loop strings such as 'best', 'picture' and 'nominee'.
+It is so important to note that the eight films nominated for the best picture were also nominated for other awards. This means when selecting data from tweets about 'Birdman' for example, I had to make sure if there are specifics that can help to only deal with information for the best pictures, and not for other nominations received. Accordingly, I included in my searching loop strings such as 'best', 'picture' and/or 'nominee'.
 
 *** Part 3: Challenge 2 -- Winner announcement prediction ***
 
-The code here is mainly about the winner of the best picture, Birdman (or The Unexpected Vertue of Ignorance).
+This part deals mainly with the winner of the best picture, Birdman (or The Unexpected Vertue of Ignorance). The principal goal is to find the time (hour and min) when tweets about Birdman appear the most.
 Three main procedures were used in this part:
 
 1. Firstly, I looped in the Tweets to find mentions about Birdman (or The unexpected virtue of ignorance).
