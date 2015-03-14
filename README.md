@@ -56,6 +56,6 @@ These functions are respectively solving the second, the third and the fourth pa
 ###### Expected ouptut
 
 * `DisplayResults()` prints a list of ordered films from 1 to 8. The order goes from the film with high mentions to the one with low mentions in tweets. 
-* `FindTime()` returns the time between 5:30 to 9:30 that corresponds to the highest mentions of Birdman in tweets. Recall from the note in 'Part 3' that the function `FindTime()` -- as well as `DisplayResults()` -- took into account the fact that Birdman could also be tweeted under the name 'Unexpected virtue of America'.
+* `FindTime()` returns the time between 5:30PM to 9:30PM that corresponds to the highest mentions of Birdman in tweets. Recall from the note in 'Part 3' that the function `FindTime()` -- as well as `DisplayResults()` -- took into account the fact that Birdman could also be tweeted under the name 'Unexpected virtue of America'.
 * `FindState()` diplays all the states of the United States, ordered according to the frequency of tweets about the Oscars 2015. The first State displayed is the one with more tweets about the Oscars; and the last one has the least of tweets about the Oscars. 
 
