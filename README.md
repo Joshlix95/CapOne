@@ -1,9 +1,8 @@
-#### Capital One
-###### Challenge on MindSumo about #Oscar2015
+###### Challenge on MindSumo about the #Oscar2015 -- Capital One
 ###### Programming language: Python
 ###### Author: Josuel Musambaghani
 
-### Analyzing data from The Oscars 2015 
+## Analyzing data from The Oscars 2015 
 
 In the Capital One challenge contest, three main concerns were carefully treated:
 
@@ -43,7 +42,7 @@ Three main procedures were used in this part:
 
 Here, I used a dictionary (called 'states') that stores all the US States and their abbreviations as keys. Every key stores in its list possible strings that can be written in a tweet (post) that refers to a specific state; for example, for the state of California, we have the key 'CA' and the list ['California', 'cali', 'CA']. The dictionary 'states' was then used in a for loop to count how many times the name of a state was mentioned in a tweet. The looping here is done in the column of 'Users location' (see data oscars_tweets.csv), turned to a list by using the initial function ColCall(col). 
 
-#### Test
+#### Test - Efficiency
 
 The code can be tested by calling only three functions: 
 - DisplayResults()
@@ -51,7 +50,7 @@ The code can be tested by calling only three functions:
 - FindState()
 These functions are respectively solving the second, the third and the fourth parts described here above. 
 
-##### Expected ouptut
+###### Expected ouptut
 
 * DisplayResults() prints a list of ordered films from 1 to 8. The order goes from the film with high mentions to the one with low mentions in tweets. 
 * FindTime() returns the time between 5:30 to 9:30 that corresponds to the highest mentions of Birdman in tweets. Recall from the note in 'Part 3' that the function FindTime() -- as well as DisplayResults() -- took into account the fact that Birdman could also be tweeted under the name 'Unexpected virtue of America'.
