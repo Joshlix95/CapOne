@@ -3,7 +3,7 @@
 ###### Programming language: Python
 ###### Author: Josuel Musambaghani
 
-#### Challenge Context -- Analyzing data from The Oscars 2015 
+### Analyzing data from The Oscars 2015 
 
 In the Capital One challenge contest, three main concerns were carefully treated:
 
@@ -42,3 +42,18 @@ Three main procedures were used in this part:
 #### Part 4: Challenge 3 -- Location [States that tweeted the most]
 
 Here, I used a dictionary (called 'states') that stores all the US States and their abbreviations as keys. Every key stores in its list possible strings that can be written in a tweet (post) that refers to a specific state; for example, for the state of California, we have the key 'CA' and the list ['California', 'cali', 'CA']. The dictionary 'states' was then used in a for loop to count how many times the name of a state was mentioned in a tweet. The looping here is done in the column of 'Users location' (see data oscars_tweets.csv), turned to a list by using the initial function ColCall(col). 
+
+#### Test
+
+The code can be tested by calling only three functions: 
+- DisplayResults()
+- FindTime()
+- FindState()
+These functions are respectively solving the second, the third and the fourth parts described here above. 
+
+##### Expected ouptut
+
+* DisplayResults() prints a list of ordered films from 1 to 8. The order goes from the film with high mentions to the one with low mentions in tweets. 
+* FindTime() returns the time between 5:30 to 9:30 that corresponds to the highest mentions of Birdman in tweets. Recall from the note in 'Part 3' that the function FindTime() -- as well as DisplayResults() -- took into account the fact that Birdman could also be tweeted under the name 'Unexpected virtue of America'.
+* FindState() diplays all the states of the United States, ordered according to the frequency of tweets about the Oscars 2015. The first State displayed is the one with more tweets about the Oscars; and the last one has the least of tweets about the Oscars. 
+
