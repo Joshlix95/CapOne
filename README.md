@@ -28,7 +28,7 @@ Next, I created another function called 'FindAppearance(Film)' that loops over t
 ###### Note
 It is so important to note that the eight films nominated for the best picture were also nominated for other awards. This means when selecting data from tweets about 'Birdman' for example, I had to make sure if there are specifics that can help to only deal with information for the best pictures, and not for other nominations received. Accordingly, I included in my searching loop strings such as 'best', 'picture' and/or 'nominee'.
 
-#### Part 3: Challenge 2 -- Winner announcement prediction ***
+#### Part 3: Challenge 2 -- Winner announcement prediction
 
 This part deals mainly with the winner of the best picture, Birdman (or The Unexpected Vertue of Ignorance). The principal goal is to find the time (hour and min) when tweets about Birdman appear the most.
 Three main procedures were used in this part:
@@ -39,6 +39,6 @@ Three main procedures were used in this part:
 
 3. Once the time correspondence is founded, I counted the occurrence of each value of time (reduced to hours and minutes, without seconds and fractions) in the list 'store1'. The time with most occurrences is the time with most tweets.
 
-#### Part 4: Challenge 3 -- Location [States that tweeted the most] ***
+#### Part 4: Challenge 3 -- Location [States that tweeted the most]
 
 Here, I used a dictionary (called 'states') that stores all the US States and their abbreviations as keys. Every key stores in its list possible strings that can be written in a tweet (post) that refers to a specific states; for example, for the state of California, we have the key 'CA' and the list ['California', 'cali', 'CA']. The dictionary 'states' was then used in a for loop to count how many times the name of a state was mentioned in a tweet. The looping here is done in the column of 'Users location' (see data oscars_tweets.csv), turned to a list by using the initial function ColCall(col). 
