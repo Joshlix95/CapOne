@@ -17,7 +17,7 @@ I structured the project in four main parts as follow:
 
 #### Part 1: Installation
 
-The goal of this part is to assemble all important modules (from outside the code) that can be helpful when solving the three challenges. For instance, the library `CSV` was imported to facilitate manipulations of data given in the CSV format. In addition, I created a function called `ColCall(col)`; this function will help to get data from any entire column of the file (oscars_tweets.csv) under the form (datatype) of a list. As it can be seen throughout my whole code, this definition is referenced regularly to read data from the Excel file.
+The goal of this part is to assemble all important modules (from outside the code) that can be helpful when solving the three challenges. For instance, the library `CSV` was imported to facilitate manipulations of data given in the CSV format. In addition, I created a function called `ColCall(col)`; this function will help to get data from any entire column of the file (<oscars_tweets.csv>) under the form (datatype) of a list. As it can be seen throughout my whole code, this definition is referenced regularly to read data from the Excel file.
 
 #### Part 2: Challenge 1 -- Popularity rank
 
