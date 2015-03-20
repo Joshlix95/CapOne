@@ -1,7 +1,7 @@
 ###### Challenge on MindSumo about the `#Oscars2015` -- Capital One
 ###### Programming language: Python
 ###### Author: Josuel Musambaghani
-###### Email: <joshlixmus@gmail.com>
+###### Email: *<joshlixmus@gmail.com>*
 
 ## Analyzing data from The Oscars 2015 
 
